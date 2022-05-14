@@ -24,6 +24,10 @@ public class Guia extends Empleado {
         super(id, nombre);
     }
 
+    public Guia(ObjectId id, String nombre, String telefono){
+        super(id, nombre, telefono);
+    }
+    
     public Guia(String nombre, String telefono, Date fechaComienzo, String discriminador, List<Itinerario> itinerarios) {
         super(nombre, telefono, fechaComienzo, discriminador);
         this.itinerarios = itinerarios;

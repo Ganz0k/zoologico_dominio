@@ -29,6 +29,12 @@ public class Empleado {
         this.nombre = nombre;
     }
 
+    public Empleado(ObjectId id, String nombre, String telefono) {
+        this.id = id;
+        this.nombre = nombre;
+        this.telefono = telefono;
+    }
+    
     public Empleado(String nombre, String telefono, Date fechaComienzo, String discriminador) {
         this.nombre = nombre;
         this.telefono = telefono;
