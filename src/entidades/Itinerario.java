@@ -21,7 +21,7 @@ public class Itinerario {
     private Integer maximoVisitantes;
     private List<Zona> zonasRecorridas;
     private Integer numEspecies;
-    private List<String> diasRecorrido;
+    private List<Dia> diasRecorrido;
 
     public Itinerario() {
         
@@ -32,7 +32,7 @@ public class Itinerario {
         this.nombre = nombre;
     }
 
-    public Itinerario(String nombre, Integer duracionRecorrido, Double longitud, Integer maximoVisitantes, List<Zona> zonasRecorridas, List<String> diasRecorrido) {
+    public Itinerario(String nombre, Integer duracionRecorrido, Double longitud, Integer maximoVisitantes, List<Zona> zonasRecorridas, List<Dia> diasRecorrido) {
         this.nombre = nombre;
         this.duracionRecorrido = duracionRecorrido;
         this.longitud = longitud;
@@ -46,7 +46,7 @@ public class Itinerario {
         this.diasRecorrido = diasRecorrido;
     }
 
-    public Itinerario(ObjectId id, String nombre, Integer duracionRecorrido, Double longitud, Integer maximoVisitantes, List<Zona> zonasRecorridas, List<String> diasRecorrido) {
+    public Itinerario(ObjectId id, String nombre, Integer duracionRecorrido, Double longitud, Integer maximoVisitantes, List<Zona> zonasRecorridas, List<Dia> diasRecorrido) {
         this.id = id;
         this.nombre = nombre;
         this.duracionRecorrido = duracionRecorrido;
@@ -61,7 +61,7 @@ public class Itinerario {
         this.diasRecorrido = diasRecorrido;
     }
 
-    public Itinerario(ObjectId id, String nombre, Integer duracionRecorrido, Double longitud, Integer maximoVisitantes, List<Zona> zonasRecorridas, Integer numEspecies, List<String> diasRecorrido) {
+    public Itinerario(ObjectId id, String nombre, Integer duracionRecorrido, Double longitud, Integer maximoVisitantes, List<Zona> zonasRecorridas, Integer numEspecies, List<Dia> diasRecorrido) {
         this.id = id;
         this.nombre = nombre;
         this.duracionRecorrido = duracionRecorrido;
@@ -129,11 +129,11 @@ public class Itinerario {
         this.nombre = nombre;
     }
 
-    public List<String> getDiasRecorrido() {
+    public List<Dia> getDiasRecorrido() {
         return diasRecorrido;
     }
 
-    public void setDiasRecorrido(List<String> diasRecorrido) {
+    public void setDiasRecorrido(List<Dia> diasRecorrido) {
         this.diasRecorrido = diasRecorrido;
     }
 

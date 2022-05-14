@@ -24,11 +24,12 @@ public class Zona {
         
     }
 
-    public Zona(ObjectId id, String nombre) {
+    public Zona(ObjectId id, String nombre, Double extension) {
         this.id = id;
         this.nombre = nombre;
+        this.extension = extension;
     }
-
+    
     public Zona(String nombre, Double extension, List<ObjectId> especies, List<ObjectId> habitats) {
         this.nombre = nombre;
         this.extension = extension;
