@@ -49,6 +49,6 @@ public class Guia extends Empleado {
 
     @Override
     public String toString() {
-        return super.toString() + ", " + itinerarios;
+        return super.getNombre();
     }
 }

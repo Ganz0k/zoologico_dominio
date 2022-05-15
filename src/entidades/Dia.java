@@ -4,7 +4,7 @@
  */
 package entidades;
 
-import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Objects;
 
 /**
@@ -14,9 +14,9 @@ import java.util.Objects;
 public class Dia {
     
     private String descripcion;
-    private LocalDateTime hora;
+    private LocalTime hora;
 
-    public Dia(String descripcion, LocalDateTime hora) {
+    public Dia(String descripcion, LocalTime hora) {
         this.descripcion = descripcion;
         this.hora = hora;
     }
@@ -32,11 +32,11 @@ public class Dia {
         this.descripcion = descripcion;
     }
 
-    public LocalDateTime getHora() {
+    public LocalTime getHora() {
         return hora;
     }
 
-    public void setHora(LocalDateTime hora) {
+    public void setHora(LocalTime hora) {
         this.hora = hora;
     }
 
