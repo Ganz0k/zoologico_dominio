@@ -164,6 +164,6 @@ public class Itinerario {
 
     @Override
     public String toString() {
-        return id + ", " + duracionRecorrido + ", " + longitud + ", " + maximoVisitantes + ", " + zonasRecorridas + ", " + numEspecies + ", " + diasRecorrido;
+        return nombre;
     }
 }
