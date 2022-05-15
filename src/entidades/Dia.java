@@ -14,9 +14,14 @@ import java.util.Objects;
 public class Dia {
     
     private String descripcion;
-    private LocalTime hora;
+    private String hora;
 
-    public Dia(String descripcion, LocalTime hora) {
+    public Dia(String descripcion){
+        this.descripcion = descripcion;
+        this.hora = null;
+    }
+    
+    public Dia(String descripcion, String hora) {
         this.descripcion = descripcion;
         this.hora = hora;
     }
@@ -32,11 +37,11 @@ public class Dia {
         this.descripcion = descripcion;
     }
 
-    public LocalTime getHora() {
+    public String getHora() {
         return hora;
     }
 
-    public void setHora(LocalTime hora) {
+    public void setHora(String hora) {
         this.hora = hora;
     }
 
@@ -68,7 +73,7 @@ public class Dia {
 
     @Override
     public String toString() {
-        return "Dia{" + "descripcion=" + descripcion + ", hora=" + hora + '}';
+        return descripcion;
     }
     
 }
