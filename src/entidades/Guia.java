@@ -43,6 +43,10 @@ public class Guia extends Empleado {
         return itinerarios;
     }
 
+    public List<Itinerario> getItinerarios() {
+        return itinerarios;
+    }
+
     public void setItinerarios(List<Itinerario> itinerarios) {
         this.itinerarios = itinerarios;
     }
