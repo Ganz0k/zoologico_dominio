@@ -5,6 +5,7 @@
 package enumeradores;
 
 /**
+ * Sexo del animal
  *
  * @author luisg
  */
